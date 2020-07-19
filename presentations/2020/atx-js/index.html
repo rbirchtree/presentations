@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="css/index.css" id="theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Coding Innovations From Bad Judgement</h1>	
+					<p>Rob Birch</p>
+					<img class="bio" src="http://databirchtree.com/img/rob.png"/>
+				</section>
+				<section data-transition="zoom">
+					<quote>Good judgement comes from experience, and experience — well, that comes from poor judgement.</quote>
+					<p>-Anon</p>
+				</section>
+				<section>
+					<h1>Tale of Two Websites</h1>
+					<p><a href="https://superheroesdeliver.com/">SuperHeroesDeliver.com</a> vs <a href="https://www.abettersettlement.com/">ABetterSettlement.com</a></p>
+					<p class="fragment">Planned vs Unplanned</p>
+					<!-- Bob Ross there are no mistakes...just happy accidents -->
+				</section>
+				<section data-background-color="yellow">
+					<h1 class="black">Mistake #1</h1>
+					<p class="black">Not planning the work</p>
+				</section>
+				<section>
+					<h1>Solution #1a</h1>
+					<p>Use <a href="https://trello.com/b/4yMsHPEL/ml-car-crash-web-app">Trello</a></p>
+				</section>
+				<section>
+					<h1>Solution #1b</h1>
+					<p>Use <a href="https://www.draw.io/#G1o0Wz96zh6i7RSIa65szrJ43SxVCbuMBX">Draw.io</a></p>
+				</section>
+				<section>
+					<h1>Mistake #2</h1>
+					<p>Hosting on two different cloud platforms</p>
+				</section>
+				<section>
+					<h1>Solution #2</h1>
+					<p>Pick just one platform</p>
+				</section>
+				<section>
+					<h1>Mistake #3</h1>
+					<p class="fragment">Committing Stripe's API keys</p>
+					<!-- make audience guess and time the appearance -->
+				</section>
+				<section data-visibility="uncounted">
+					<h1>Solution #3</h1>
+					<p>Use NodeJS <a href="https://www.npmjs.com/package/dotenv">enviromental variables</a></p>
+				</section>
+				<section>
+					<pre><code data-trim data-noescape>
+						npm install dotenv
+					</code></pre>
+					<pre><code data-trim data-noescape>
+						require('dotenv').config()
+					</code></pre>
+					<pre><code data-trim data-noescape>
+						DB_HOST=localhost
+						DB_USER=root
+						DB_PASS=s1mpl3
+					</code></pre>
+				</section>
+				<section data-visibility="uncounted">
+					<h1>What Happens When Lessons Are Applied?</h1>
+					<div class="fragment">
+						<p>Innovation!</p>
+						<!-- make it slowly appear -->
+						<p><a href="https://www.abettersettlement.com/">A Better Settlement</a></p>
+					</div>
+				</section>
+				<section  data-state='the-end'>
+					<h1>Summary</h1>
+					<ul data-auto-animate>
+						<li>Plan your project out</li>
+						<li>Use the same platform for hosting everything</li>
+						<li>Use NodeJS Enviroment Variables</li>
+					</ul>
+					<p class="fragment">fin</p>
+				</section>
+				<section data-visibility="uncounted">
+					<h1>Resources</h1>
+					<ul>
+						<li><a href="trello.com">trello.com</a></li>
+						<li><a href="draw.io">draw.io</a></li>
+						<li><a href="https://www.npmjs.com/package/dotenv">NodeJS Enviromental Variables</a></li>
+						<li><a href="https://www.atlassian.com/agile/project-management/estimation"> Agile Methdology</a></li>
+						<li><a href="https://www.ted.com/talks/jeff_bezos_the_electricity_metaphor_for_the_web_s_future/transcript?language=en">Jeff Bezos' on the Golden Age of the Internet</a></li>
+					</ul>
+				</section>
+				<section>
+					<div class="r-stack">
+						<img class="fragment fade-out" data-fragment-index="0" src="https://placekitten.com/450/300" width="450" height="300">
+						<img class="fragment current-visible" data-fragment-index="0" src="https://placekitten.com/300/450" width="300" height="450">
+						<img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
+					  </div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
