@@ -29,7 +29,7 @@
 				<section>
 					<h1>Tale of Two Websites</h1>
 					<p><a href="https://superheroesdeliver.com/">SuperHeroesDeliver.com</a> vs <a href="https://www.abettersettlement.com/">ABetterSettlement.com</a></p>
-					<p class="fragment">Planned vs Unplanned</p>
+					<p class="fragment">Unplanned vs Planned</p>
 					<!-- Bob Ross there are no mistakes...just happy accidents -->
 				</section>
 				<section data-background-color="yellow">
@@ -49,8 +49,21 @@
 					<p>Hosting on two different cloud platforms</p>
 				</section>
 				<section>
-					<h1>Solution #2</h1>
+					<h1>Solution #2a</h1>
 					<p>Pick just one platform</p>
+				</section>
+				<section>
+					<h1>Solution #2b</h1>
+					<p>Quickly deploy</p>
+					<pre><code data-trim data-noescape>
+						//package.json
+						"scripts": {
+							...
+							"deploy": "aws s3 sync build/ s3://www.abettersettlement.com --acl public-read",
+							"postbuild": "react-snap"
+							...
+						},
+				</code></pre>
 				</section>
 				<section>
 					<h1>Mistake #3</h1>
