@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Coding Innovations From Bad Judgement</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -18,12 +18,12 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Coding Innovations From Bad Judgement</h1>	
-					<p>Rob Birch</p>
-					<img class="bio" src="http://databirchtree.com/img/rob.png"/>
+					<h3 style="text-align:left;">Coding Innovations From Bad Judgement</h3>	
+					<p style="text-align:left;">Rob Birch</p>
+					<img style="text-align:left;" class="bio" src="http://databirchtree.com/img/rob.png"/>
 				</section>
 				<section data-transition="zoom">
-					<quote>Good judgement comes from experience, and experience — well, that comes from poor judgement.</quote>
+					<quote>Good judgement comes from experience, and experience <span class="fragment">— well, that comes from poor judgement.</span></quote>
 					<p>-Anon</p>
 				</section>
 				<section>
@@ -66,13 +66,17 @@
 						npm install dotenv
 					</code></pre>
 					<pre><code data-trim data-noescape>
-						require('dotenv').config()
-					</code></pre>
-					<pre><code data-trim data-noescape>
+						//.env
 						DB_HOST=localhost
 						DB_USER=root
 						DB_PASS=s1mpl3
 					</code></pre>
+					<pre><code data-trim data-noescape>
+						//index.js
+						require('dotenv').config()
+						process.env.DB_host
+					</code></pre>
+					
 				</section>
 				<section data-visibility="uncounted">
 					<h1>What Happens When Lessons Are Applied?</h1>
@@ -90,6 +94,7 @@
 						<li>Use NodeJS Enviroment Variables</li>
 					</ul>
 					<p class="fragment">fin</p>
+					<p class="fragment">Questions?</p>
 				</section>
 				<section data-visibility="uncounted">
 					<h1>Resources</h1>
